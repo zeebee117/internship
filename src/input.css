@@ -72,7 +72,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Left + Right columns */
   width: 100%;
-  height: 100vh; /* full viewport height */
+  height: auto; /* full viewport height */
   overflow: hidden;
 }
 
@@ -204,7 +204,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Image left, content right */
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
 }
 
@@ -572,7 +572,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 0.5fr;
   gap: 0px;
 }
 
@@ -666,6 +665,7 @@ body {
     height: auto;
   }
 }
+  }
 @media (max-width: 1024px) {
   .custom-hero-grid {
     grid-template-columns: 1fr; /* stack */
