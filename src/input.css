@@ -60,9 +60,10 @@
 @tailwind utilities;
 
 body {
-  background-color: #fcf5ef
-;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fcf5ef;
 }
+
 /* External CSS for the button */
 .custom-button {
     display: inline-block;
