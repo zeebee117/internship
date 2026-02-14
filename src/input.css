@@ -667,3 +667,173 @@ body {
 .footer-copyright {
   font-size: 13px;
 }
+
+/* ============================= */
+/* MOBILE RESPONSIVE OVERRIDES  */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  /* -------- HERO GRID (Section 2) -------- */
+  .hero-grid {
+    grid-template-columns: 1fr;   /* stack */
+    height: auto;                 /* remove 100vh lock */
+  }
+
+  .hero-left {
+    grid-template-rows: auto auto;
+  }
+
+  .hero-left-content {
+    padding: 40px 20px;
+  }
+
+  .hero-left h2 {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .hero-button {
+    height: auto;
+    line-height: normal;
+    padding: 20px 0;
+  }
+
+  .hero-right {
+    height: 400px;
+  }
+
+
+
+  /* -------- SPECIALTIES -------- */
+  .specialties-grid {
+    grid-template-columns: 1fr;   /* single column */
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+
+
+  /* -------- CUSTOM HERO GRID -------- */
+  .custom-hero-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .custom-hero-text {
+    padding: 40px 20px;
+  }
+
+  .custom-hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .custom-hero-text p,
+  .custom-hero-text ul {
+    font-size: 1rem;
+  }
+
+  .custom-hero-button {
+    height: auto;
+    line-height: normal;
+    padding: 20px 0;
+  }
+
+  .custom-hero-image {
+    height: 400px;
+  }
+
+
+
+  /* -------- LILAC SECTION -------- */
+  .lilac-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .lilac-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .lilac-content h2 {
+    font-size: 2rem;
+  }
+
+  .lilac-content p {
+    font-size: 1rem;
+  }
+
+  .image-frame {
+    width: 100%;
+    margin: 40px 0 0 0;
+  }
+
+
+
+  /* -------- FAQ SECTION -------- */
+  .faq-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+
+  .faq-title {
+    font-size: 2rem;
+  }
+
+  .accordion-header {
+    font-size: 1.2rem;
+  }
+
+
+
+  /* -------- BACKGROUND ACCORDION -------- */
+  .alt-title {
+    font-size: 2rem;
+  }
+
+  .alt-accordion .accordion {
+    width: 100%;
+  }
+
+
+
+  /* -------- CTA SECTION -------- */
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+  }
+
+
+
+  /* -------- FOOTER -------- */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .footer-col h2 {
+    text-align: left;
+  }
+
+  .footer-links ul {
+    text-align: left;
+  }
+
+  .custom-footer {
+    width: 90%;
+  }
+
+}
