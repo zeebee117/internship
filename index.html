@@ -185,6 +185,47 @@
 
 
 
+<section class="py-16 md:py-24 ">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-semibold text-neutral-800 mb-10">
+      A Calm Space for Healing
+    </h2>
+
+    <!-- Slideshow -->
+    <div class="relative w-full max-w-3xl mx-auto mb-12">
+      <div class="relative h-72 md:h-96">
+        <img 
+          src="./images/office-1.jpeg" 
+          alt="Dr. Reynolds' private counseling office with soft lighting and comfortable seating"
+          class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-lg transition-opacity duration-1000 opacity-100"
+          id="slide1"
+        />
+        <img 
+          src="./images/office-2.jpeg" 
+          alt="Therapy seating area designed for calm and supportive conversations"
+          class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-lg transition-opacity duration-1000 opacity-0"
+          id="slide2"
+        />
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="max-w-2xl mx-auto space-y-6">
+      <p class="text-neutral-600 leading-relaxed">
+        Dr. Maya Reynolds’ Santa Monica office is designed to feel calm, private, and emotionally grounding from the moment you arrive. The space is intentionally arranged to support safety, focus, and meaningful therapeutic work.
+      </p>
+      <p class="text-neutral-600 leading-relaxed">
+        Soft lighting, comfortable seating, and neutral tones create an environment that feels steady and welcoming. Whether meeting in person in Santa Monica or through secure telehealth across California, clients can expect professionalism, confidentiality, and a space that encourages openness and trust.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
 
     <div class="lilac-section">
   <!-- Left side content -->
@@ -343,8 +384,6 @@ I offer in-person therapy from my private Santa Monica office as well as secure 
 
 
 
-
-
     <footer class="footer-top">
   <div class="footer-container">
 
@@ -459,7 +498,21 @@ I offer in-person therapy from my private Santa Monica office as well as secure 
     });
   });
 
+ <!-- Simple Fade Script -->
+     const slide1 = document.getElementById('slide1');
+    const slide2 = document.getElementById('slide2');
+    let showingFirst = true;
 
+    setInterval(() => {
+      if (showingFirst) {
+        slide1.classList.replace('opacity-100', 'opacity-0');
+        slide2.classList.replace('opacity-0', 'opacity-100');
+      } else {
+        slide2.classList.replace('opacity-100', 'opacity-0');
+        slide1.classList.replace('opacity-0', 'opacity-100');
+      }
+      showingFirst = !showingFirst;
+    }, 4000);
 
 
 </script>
