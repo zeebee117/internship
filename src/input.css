@@ -753,44 +753,51 @@ body {
 
 
   /* -------- LILAC SECTION -------- */
-  /* -------- LILAC SECTION REFINED MOBILE -------- */
+/* -------- LILAC SECTION PROPER MOBILE BALANCE -------- */
+
 .lilac-section {
   flex-direction: column;
-  padding: 50px 20px;
-  gap: 30px;
+  padding: 60px 20px;
+  gap: 50px;
 }
 
+/* TEXT FIRST */
 .lilac-content {
   width: 100%;
   margin: 0;
-  text-align: left;
+  order: 1;
 }
 
 .lilac-content h2 {
-  font-size: 1.9rem;
-  line-height: 1.2;
-  margin-bottom: 16px;
+  font-size: 1.8rem;
+  line-height: 1.25;
+  margin-bottom: 18px;
 }
 
 .lilac-content p {
   font-size: 1rem;
-  line-height: 1.7;   /* more breathing space */
-  margin-bottom: 24px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 95%;
 }
 
-.lilac-content .custom-button {
-  margin-top: 10px;
-}
-
+/* IMAGE SECOND - BIGGER VISUAL PRESENCE */
 .image-frame {
   width: 100%;
-  margin: 30px 0 0 0;
+  margin: 0 auto;
+  order: 2;
 }
 
+.door-image {
+  width: 100%;
+  border-radius: 50% 50% 12px 12px;
+}
+
+/* Make overlapping circle more visible */
 .circle-image {
-  width: 60%;
+  width: 75%;
+  transform: translate(15%, 15%);
 }
-
 
 
   /* -------- FAQ SECTION -------- */
