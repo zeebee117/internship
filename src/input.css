@@ -753,28 +753,43 @@ body {
 
 
   /* -------- LILAC SECTION -------- */
-  .lilac-section {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
+  /* -------- LILAC SECTION REFINED MOBILE -------- */
+.lilac-section {
+  flex-direction: column;
+  padding: 50px 20px;
+  gap: 30px;
+}
 
-  .lilac-content {
-    width: 100%;
-    margin: 0;
-  }
+.lilac-content {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
 
-  .lilac-content h2 {
-    font-size: 2rem;
-  }
+.lilac-content h2 {
+  font-size: 1.9rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
 
-  .lilac-content p {
-    font-size: 1rem;
-  }
+.lilac-content p {
+  font-size: 1rem;
+  line-height: 1.7;   /* more breathing space */
+  margin-bottom: 24px;
+}
 
-  .image-frame {
-    width: 100%;
-    margin: 40px 0 0 0;
-  }
+.lilac-content .custom-button {
+  margin-top: 10px;
+}
+
+.image-frame {
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+
+.circle-image {
+  width: 60%;
+}
 
 
 
