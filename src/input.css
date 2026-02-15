@@ -839,43 +839,40 @@ h1, h2, h3 {
 
 
   /* -------- FOOTER -------- */
- /* Mobile footer adjustments */
+ /* Mobile footer: two rows with headings inline, content below */
   .footer-container {
-    display: flex !important;        /* force flex on mobile */
-    flex-direction: row !important;  /* inline in one line */
-    justify-content: space-between;  /* spread evenly */
-    align-items: center;             /* vertical center */
-    gap: 10px;                       /* small gap between sections */
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important; /* three columns */
+    gap: 10px;
+    text-align: center;
+    align-items: start;
   }
 
-  .footer-col {
-    flex: 1;                        /* each column takes equal space */
-    text-align: center;             /* center text on mobile */
-    margin: 0 !important;           /* remove any extra margins */
-    padding: 0 5px;                 /* small side padding */
-  }
-
+  /* Headings row */
   .footer-col h1,
-  .footer-col h2,
+  .footer-col h2 {
+    font-size: 0.9rem !important;
+    margin-bottom: 5px;
+  }
+
+  /* Content row */
   .footer-col p,
   .footer-col a,
   .footer-links ul,
   .footer-links li {
-    font-size: 0.75rem !important;   /* reduce text size to fit */
+    font-size: 0.75rem !important;
     line-height: 1.2 !important;
-    text-align: center !important;   /* center everything */
-    margin: 0 !important;
+    margin: 0;
+    padding: 0;
   }
 
+  /* Footer links inline */
   .footer-links ul {
     display: flex !important;
-    flex-direction: row !important;  /* inline links */
-    gap: 8px !important;             /* small spacing */
-    padding: 0 !important;
-  }
-
-  .footer-links li {
-    margin: 0 !important;            /* remove extra spacing */
+    flex-direction: column; /* keep stacked under heading */
+    gap: 3px;
+    justify-content: center;
+    padding: 0;
   }
 }
 
