@@ -758,6 +758,8 @@ body {
     height: 400px;
   }
 
+    /* --------lilac-section -------- */
+
   .lilac-section {
     flex-direction: column;
     padding: 40px 20px;
@@ -785,7 +787,7 @@ body {
   }
 
   .circle-image {
-    width: 60%;           /* ⬅ slightly smaller circle */
+    width: 50%;           /* ⬅ slightly smaller circle */
     transform: translate(15%, 15%); /* ⬅ less aggressive overlap */
   }
 
