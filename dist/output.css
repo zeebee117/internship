@@ -1860,35 +1860,41 @@ body {
 
   /* MOBILE FIX: custom-footer */
 
+  /* Mobile adjustments for custom-footer */
+
   .custom-footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* stacked on mobile */
-    gap: 15px;
-    text-align: center;
-    padding: 20px;
+    width: 90%;
+    /* wider so it fits small screens */
+    padding: 20px 0;
+    font-size: 13px;
+    /* slightly smaller for mobile */
   }
 
-  .custom-footer .footer-links,
-  .custom-footer .footer-credit,
-  .custom-footer .footer-copyright {
+  .footer-links {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    flex-wrap: wrap;
+    /* wrap links to next line if needed */
     justify-content: center;
-    align-items: center;
-    font-size: 0.85rem;
-    line-height: 1.3;
+    gap: 8px;
+    /* space between links */
+    margin-bottom: 10px;
   }
 
-  .custom-footer .footer-links a {
+  .footer-links a {
+    margin: 4px 6px;
+    /* smaller inline spacing for mobile */
     font-size: 0.85rem;
-    text-decoration: none;
-    color: #0e0437;
   }
 
-  .custom-footer .footer-links a:hover {
-    text-decoration: underline;
+  .footer-credit {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    font-size: 0.8rem;
   }
 }
 
@@ -1975,7 +1981,6 @@ body {
     line-height: 1.5rem;
   }
 }
-
 
 
 
