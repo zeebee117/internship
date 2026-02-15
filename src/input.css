@@ -789,7 +789,7 @@ body {
 
   .circle-image {
     width: 50%;           /* ⬅ slightly smaller circle */
-    transform: translate(15%, 15%); /* ⬅ less aggressive overlap */
+    transform: translate(25%, 25%); /* ⬅ less aggressive overlap */
   }
 
 
