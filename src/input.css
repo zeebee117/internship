@@ -758,12 +758,11 @@ body {
     height: 400px;
   }
 
-
-
-  /* -------- LILAC SECTION -------- */
   .lilac-section {
     flex-direction: column;
     padding: 40px 20px;
+    align-items: center;
+    text-align: center;
   }
 
   .lilac-content {
@@ -777,14 +776,21 @@ body {
 
   .lilac-content p {
     font-size: 1rem;
+    margin-bottom: 30px;
   }
 
   .image-frame {
-    width: 100%;
-    margin: 40px 0 0 0;
+    width: 85%;           /* ⬅ smaller than full width */
+    margin: 20px auto 0;  /* ⬅ centered */
+  }
+
+  .circle-image {
+    width: 60%;           /* ⬅ slightly smaller circle */
+    transform: translate(15%, 15%); /* ⬅ less aggressive overlap */
   }
 
 
+  
 
   /* -------- FAQ SECTION -------- */
   .faq-section {
