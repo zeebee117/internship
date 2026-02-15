@@ -1803,47 +1803,58 @@ body {
 
   /* -------- FOOTER -------- */
 
+  /* Mobile footer adjustments */
+
   .footer-container {
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    /* force flex on mobile */
+    flex-direction: row !important;
+    /* inline in one line */
     justify-content: space-between;
+    /* spread evenly */
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    text-align: center;
+    /* vertical center */
+    gap: 10px;
+    /* small gap between sections */
   }
 
   .footer-col {
-    flex: 1 1 auto;
-    margin: 0;
-    padding: 0 10px;
-    border: none;
-    /* remove desktop bottom borders */
+    flex: 1;
+    /* each column takes equal space */
+    text-align: center;
+    /* center text on mobile */
+    margin: 0 !important;
+    /* remove any extra margins */
+    padding: 0 5px;
+    /* small side padding */
   }
 
   .footer-col h1,
-  .footer-col h2 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-  }
-
+  .footer-col h2,
   .footer-col p,
-  .footer-col a {
-    font-size: 0.9rem;
-    line-height: 1.4;
+  .footer-col a,
+  .footer-links ul,
+  .footer-links li {
+    font-size: 0.75rem !important;
+    /* reduce text size to fit */
+    line-height: 1.2 !important;
+    text-align: center !important;
+    /* center everything */
+    margin: 0 !important;
   }
 
   .footer-links ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-    padding: 0;
-    margin: 5px 0 0 0;
+    display: flex !important;
+    flex-direction: row !important;
+    /* inline links */
+    gap: 8px !important;
+    /* small spacing */
+    padding: 0 !important;
   }
 
   .footer-links li {
-    margin: 0;
+    margin: 0 !important;
+    /* remove extra spacing */
   }
 }
 
@@ -1930,6 +1941,7 @@ body {
     line-height: 1.5rem;
   }
 }
+
 
 
 
