@@ -840,21 +840,47 @@ h1, h2, h3 {
 
   /* -------- FOOTER -------- */
   .footer-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
   }
 
+  .footer-col {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 10px;
+    border: none; /* remove desktop bottom borders */
+  }
+
+  .footer-col h1,
   .footer-col h2 {
-    text-align: left;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .footer-col p,
+  .footer-col a {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 
   .footer-links ul {
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 5px 0 0 0;
   }
 
-  .custom-footer {
-    width: 90%;
+  .footer-links li {
+    margin: 0;
   }
-
 }
+
+
+
