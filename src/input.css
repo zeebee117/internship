@@ -783,7 +783,7 @@ body {
   }
 
   .image-frame {
-    width: 85%;           /* ⬅ smaller than full width */
+    width: 70%;           /* ⬅ smaller than full width */
     margin: 20px auto 0;  /* ⬅ centered */
   }
 
