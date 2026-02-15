@@ -22,6 +22,28 @@ The project leverages **HTML, Tailwind CSS, and vanilla JS**, optimized for both
 
 > ⚠️ Always merge tested changes from `development` into `therapy-website-theme-update` once approved.
 
+
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5 & Semantic Layout**
+- **Tailwind CSS** for responsive, modern design
+- **Vanilla JavaScript** for interactivity (accordion, fade animations)
+- Fully mobile-first and multi-device friendly
+
+---
+
+## 🚀 Running Locally
+
+1. Clone the repo and checkout the desired branch:
+
+```bash
+git clone https://github.com/zeebee117/internship.git
+cd internship
+git checkout therapy-website-theme-update
+
 ---
 
 ## 📁 File Structure
